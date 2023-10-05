@@ -1093,6 +1093,7 @@ modules:
                     multiplier: 10
                     index: 'rPDU2DeviceStatusPower.{{ $index }}'
                     descr: 'Power, Total'
+                    skip_value_lt: 0
                 -
                     oid: xPDUSystemOutput
                     value: xPDUSystemOutputTotalPower
@@ -1146,6 +1147,7 @@ modules:
                     divisor: 10
                     index: 'rPDU2DeviceStatusEnergy.{{ $index }}'
                     descr: 'Energy since {{ rPDU2DeviceStatusEnergyStartTime }}'
+                    skip_value_lt: 0
         pressure:
             data:
                 -
